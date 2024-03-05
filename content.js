@@ -44,11 +44,11 @@ setTimeout(function() {
 // Set a timeout to fill the recovery email field and click its next button
 setTimeout(function() {
     // Find the element for next button in recovery email section using XPath
-    var recoveryNextButton = document.evaluate('//*[@id="confirm"]',
+    var understandNextButton = document.evaluate('//*[@id="confirm"]',
         document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 
-    if (recoveryNextButton) {
-        recoveryNextButton.click();
+    if (understandNextButton) {
+        understandNextButton.click();
     } else {
         console.error('Recovery email next button not found!');
     }
